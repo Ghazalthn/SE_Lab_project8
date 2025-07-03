@@ -1,4 +1,4 @@
-package org.example.graphTravelers;
+package graphTravelers;
 
 import edu.uci.ics.jung.graph.SparseMultigraph;
 

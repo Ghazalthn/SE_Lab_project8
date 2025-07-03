@@ -1,4 +1,4 @@
-package org.example.graphTravelers;
+package graphTravelers;
 
 import java.util.List;
 

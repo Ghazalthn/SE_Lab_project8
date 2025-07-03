@@ -1,9 +1,7 @@
-package org.example;
-
 import edu.uci.ics.jung.graph.SparseMultigraph;
-import org.example.graphTravelers.BfsGraphTraverser;
-import org.example.graphTravelers.DfsGraphTraverser;
-import org.example.graphTravelers.Traverser;
+import graphTravelers.BfsGraphTraverser;
+import graphTravelers.DfsGraphTraverser;
+import graphTravelers.Traverser;
 
 import java.util.ArrayList;
 import java.util.List;
