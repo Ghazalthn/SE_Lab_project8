@@ -1,4 +1,5 @@
-import edu.uci.ics.jung.graph.SparseMultigraph;
+import graph.Graph;
+import graph.JUNGGraph;
 import graphTravelers.BfsGraphTraverser;
 import graphTravelers.DfsGraphTraverser;
 import graphTravelers.Traverser;
@@ -11,7 +12,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // Create a graph
-        SparseMultigraph<Integer,String> graph = new SparseMultigraph<>();
+        Graph graph = new JUNGGraph();
 
         // Add vertices (using Integer nodes)
         graph.addVertex(1);

@@ -1,13 +1,13 @@
 package graphTravelers;
 
-import edu.uci.ics.jung.graph.SparseMultigraph;
+import graph.Graph;
 
 import java.util.*;
 
 public class DfsGraphTraverser implements Traverser {
-    private final SparseMultigraph<Integer, String> graph;
+    private final Graph graph;
 
-    public DfsGraphTraverser(SparseMultigraph<Integer, String> graph) {
+    public DfsGraphTraverser(Graph graph) {
         this.graph = graph;
     }
 
@@ -26,7 +26,7 @@ public class DfsGraphTraverser implements Traverser {
                 result.add(vertex);
 
                 // Get neighbors and sort them for deterministic output
-                List<Integer> neighbors = new ArrayList<>(graph.getNeighbors(vertex));
+                List<Integer> neighbors = graph.getNeighbors(vertex);
                 neighbors.sort(Integer::compareTo); // ترتیب صعودی همسایگان
 
                 for (Integer neighbor : neighbors) {
